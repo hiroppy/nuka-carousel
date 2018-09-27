@@ -1,4 +1,4 @@
-declare module 'nuka-carousel' {
+declare module '@about_hiroppy/nuka-carousel' {
   interface Props {
     autoplay?: boolean;
     autoplayInterval?: number;
