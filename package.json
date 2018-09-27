@@ -5,6 +5,7 @@
   "main": "index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
+  "typings": "typings.d.ts",
   "dependencies": {
     "d3-ease": "^1.0.3",
     "exenv": "^1.2.0",
