@@ -1,5 +1,5 @@
 {
-  "name": "nuka-carousel",
+  "name": "@about_hiroppy/nuka-carousel",
   "version": "4.4.0",
   "description": "Pure React Carousel",
   "main": "index.js",
