@@ -20,6 +20,7 @@ declare module '@about_hiroppy/nuka-carousel' {
     slidesToShow?: number;
     transitionMode?: string;
     cellSpacing?: number;
+    className?: string;
   }
 
   class NukaCarousel extends React.Component<Props> {}
