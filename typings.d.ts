@@ -1,4 +1,18 @@
 declare module '@about_hiroppy/nuka-carousel' {
+  interface State {
+    currentSlide: Props['slideIndex'];
+    slideCount: number;
+    frameWidth: number;
+    slideWidth: number;
+    slidesToScroll: Props['slidesToScroll'];
+    cellSpacing: number;
+    slidesToShow: Props['slidesToShow'];
+    wrapAround: Props['wrapAround'];
+    nextSlide: () => () => void;
+    previousSlide: () => () => void;
+    goToSlide: (index: number) => (index: number) => void;
+  }
+
   interface Props {
     autoplay?: boolean;
     autoplayInterval?: number;
@@ -8,9 +22,9 @@ declare module '@about_hiroppy/nuka-carousel' {
     cellSpacing?: number;
     beforeSlide?: (currentPageIndex: number) => void;
     afterSlide?: (nextSlideIndex: number) => void;
-    renderBottomCenterControls?: (props: Props) => JSX.Element | null;
-    renderCenterLeftControls?: (props: Props) => JSX.Element | null;
-    renderCenterRightControls?: (props: Props) => JSX.Element | null;
+    renderBottomCenterControls?: (props: State) => JSX.Element | null;
+    renderCenterLeftControls?: (props: State) => JSX.Element | null;
+    renderCenterRightControls?: (props: State) => JSX.Element | null;
     speed?: number;
     swiping?: boolean;
     vertical?: boolean;
